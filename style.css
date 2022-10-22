@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(233, 46%, 7%);
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-container{
+    height: 780px;
+    width: 330px;
+    background-color: hsl(246, 38%, 16%);
+    border-radius: 10px;
+}
+
+.imagen {
+    position: relative;
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 240px;
+    border-radius: 10px 10px 0 0;
+}
+
+.imagen::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(85, 13, 143, 0.5);
+    border-radius: 10px 10px 0 0;
+}
+
+.main-text{
+    text-align: center;
+    padding: 15px 25px 0 25px;
+    font-size: 14px;
+    color: white;
+}
+
+.main-text > h1 > span{
+    color: hsl(273, 47%, 59%);
+}
+
+.description{
+    color: hsl(245, 16%, 69%);
+    font-size: 15px;
+    text-align: center;
+    padding: 0 27px 0 27px;
+    line-height: 23px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    
+}
+
+.number{
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.info{
+    text-align: center;
+    color: hsl(242, 10%, 54%);
+    font-size: 13px;
+    font-weight: 600;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.companies{
+    margin-bottom: 30px;
+}
+
+.templates{
+    margin-bottom: 30px;
+}
+
+.footer { 
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    font-size:
+    11px;
+    text-align: center;
+    color: white;
+    left: auto;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px){
+    .card-container{
+        width: 1110px;
+        height: 450px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+    }
+
+    .imagen{
+        width: 539px;
+        height: 449px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .imagen::after{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .left{
+        width: 570px;
+        display: flex;
+        align-items: center;
+  
+        flex-direction: column;
+
+    }
+
+    .main-text{
+        padding: 0 70px 0 70px;
+        font-size: 17.5px;
+        text-align: left;
+        margin-top: 43px;
+    }
+
+    .description{
+        text-align: left;
+        padding-left: 70px;
+        padding-right: 100px;
+        font-size: 15px;
+    }
+
+    .stats{
+        flex-direction: row;
+        gap: 60px;
+        margin-top: 42px;
+        width: 500px;
+        justify-content: left;
+        padding-left: 70px;
+    }
+
+    .companies{
+        margin: 0;
+    }
+
+    .templates{
+        margin: 0;
+    }
+
+    .queries{
+        margin: 0;
+    }
+}
